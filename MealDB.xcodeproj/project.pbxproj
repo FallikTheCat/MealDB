@@ -11,6 +11,10 @@
 		4E4BA9FE2A2D3CEA000FF57C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4BA9FD2A2D3CEA000FF57C /* ContentView.swift */; };
 		4E4BAA002A2D3CEB000FF57C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E4BA9FF2A2D3CEB000FF57C /* Assets.xcassets */; };
 		4E4BAA042A2D3CEB000FF57C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E4BAA032A2D3CEB000FF57C /* Preview Assets.xcassets */; };
+		4E4BAA0D2A2D3DA4000FF57C /* Desserts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4BAA0C2A2D3DA4000FF57C /* Desserts.swift */; };
+		4E4BAA0F2A2D3DB3000FF57C /* DessertDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4BAA0E2A2D3DB3000FF57C /* DessertDetails.swift */; };
+		4E4BAA122A2D3EF5000FF57C /* MealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4BAA112A2D3EF5000FF57C /* MealModel.swift */; };
+		4E4BAA142A2D4042000FF57C /* MealViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4BAA132A2D4042000FF57C /* MealViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		4E4BA9FF2A2D3CEB000FF57C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E4BAA012A2D3CEB000FF57C /* MealDB.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MealDB.entitlements; sourceTree = "<group>"; };
 		4E4BAA032A2D3CEB000FF57C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4E4BAA0C2A2D3DA4000FF57C /* Desserts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Desserts.swift; sourceTree = "<group>"; };
+		4E4BAA0E2A2D3DB3000FF57C /* DessertDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetails.swift; sourceTree = "<group>"; };
+		4E4BAA112A2D3EF5000FF57C /* MealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealModel.swift; sourceTree = "<group>"; };
+		4E4BAA132A2D4042000FF57C /* MealViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +60,9 @@
 		4E4BA9FA2A2D3CEA000FF57C /* MealDB */ = {
 			isa = PBXGroup;
 			children = (
+				4E4BAA102A2D3EEA000FF57C /* Model */,
+				4E4BAA0B2A2D3D7C000FF57C /* ViewModel */,
+				4E4BAA0A2A2D3D75000FF57C /* View */,
 				4E4BA9FB2A2D3CEA000FF57C /* MealDBApp.swift */,
 				4E4BA9FD2A2D3CEA000FF57C /* ContentView.swift */,
 				4E4BA9FF2A2D3CEB000FF57C /* Assets.xcassets */,
@@ -67,6 +78,31 @@
 				4E4BAA032A2D3CEB000FF57C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4E4BAA0A2A2D3D75000FF57C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4E4BAA0C2A2D3DA4000FF57C /* Desserts.swift */,
+				4E4BAA0E2A2D3DB3000FF57C /* DessertDetails.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4E4BAA0B2A2D3D7C000FF57C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4E4BAA132A2D4042000FF57C /* MealViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4E4BAA102A2D3EEA000FF57C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E4BAA112A2D3EF5000FF57C /* MealModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +175,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E4BAA122A2D3EF5000FF57C /* MealModel.swift in Sources */,
 				4E4BA9FE2A2D3CEA000FF57C /* ContentView.swift in Sources */,
 				4E4BA9FC2A2D3CEA000FF57C /* MealDBApp.swift in Sources */,
+				4E4BAA0D2A2D3DA4000FF57C /* Desserts.swift in Sources */,
+				4E4BAA0F2A2D3DB3000FF57C /* DessertDetails.swift in Sources */,
+				4E4BAA142A2D4042000FF57C /* MealViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +319,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -287,10 +327,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.baturaykoc.MealDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,7 +359,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -325,10 +367,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.baturaykoc.MealDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
